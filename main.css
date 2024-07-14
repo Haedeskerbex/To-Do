@@ -44,6 +44,11 @@ body{
     padding: 5px;
     background-color: rgb(208, 180, 235);
   }
+  .li{
+     font-size: 20px;
+     color: maroon;
+
+  }
 .main3{
     display: flex;
     flex-direction:column;
@@ -53,3 +58,4 @@ body{
     margin-top:15px;
     background-color: beige;
 }
+
