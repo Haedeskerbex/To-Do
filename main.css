@@ -40,8 +40,9 @@ body{
 
   .submit2{
     align-self: center;
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin-top:5px;
+    margin-left: 10px;
+    margin-bottom: 25px;
     padding: 5px;
     background-color: rgb(208, 180, 235);
   }
