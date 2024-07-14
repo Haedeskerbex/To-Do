@@ -1,6 +1,5 @@
  document.addEventListener("DOMContentLoaded",()=>{
         let task="";
-        let flag=false;
         const olOne=document.getElementById("taskToComplete");
         const olTwo=document.getElementById("taskCompleted");
         const button= document.getElementById("submit");
@@ -17,8 +16,9 @@
                 buttonDone.classList.add('submit2');
                                 
                 buttonDone.addEventListener('click',e=>{
-                        olOne.removeChild(li);
+                        olOne.removeChild(li); 
                         olTwo.append(li);
+                        li.classList.add('li2');
                         li.textContent=task+'\n';
                 })  
         })
