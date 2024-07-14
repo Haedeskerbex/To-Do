@@ -7,21 +7,22 @@
         button.addEventListener('click',e =>{
                 const li=document.createElement("li");
                 task=document.getElementById("text").value;
-                olOne.append(li);
+                olOne.appendChild(li);
                 li.innerText=task+'\n';
                 li.classList.add('li');
-                flag=true;
 
-                let button=document.createElement('button');
-                button.textContent="Task Done!";
-                li.append(button);
-                button.classList.add('submit2');
+                let buttonDone=document.createElement('button');
+                buttonDone.textContent="Task Done!";
+                li.appendChild(buttonDone);
+                buttonDone.classList.add('submit2');
                                 
-                
+                buttonDone.addEventListener('click',e=>{
+                        olOne.removeChild(li);
+                        olTwo.append(li);
+                        li.textContent=task+'\n';
+                })  
         })
-        submit2.addEventListener('click',e=>{
-                
-        })
+        
         
 
  })
